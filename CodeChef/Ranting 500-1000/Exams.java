@@ -1,3 +1,8 @@
+// Exams
+// In Chefland, there are X schools, and each school has Y students.
+// The year end results are in and a total of 𝑍 students passed the exams.
+// Assuming that all students appeared for the exams, find whether the number of students who passed in Chefland was strictly greater than 50%.
+
 import java.lang.*;
 import java.util.*;
 
