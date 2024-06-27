@@ -9,7 +9,7 @@
 import java.lang.*;
 import java.util.*;
 
-class Codechef
+class SugarJuiceBussiness
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
