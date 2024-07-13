@@ -1,1 +1,1 @@
-Practice Questions And Their Solutions For Java
+Practice Java Questions And Their Solutions
