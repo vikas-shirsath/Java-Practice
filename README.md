@@ -1,1 +1,2 @@
-Practice Java Questions And Their Solutions
+# Java-Practice
+Basic Javascript problems and everyday practice
