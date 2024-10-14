@@ -5,7 +5,15 @@ interface A {
     void config();
 }
 
-class B  implements A{
+interface X {
+    void run();
+}
+
+interface Y extends X {
+    
+}
+
+class B  implements A,Y{
 
     public void show() {
         System.out.println("in show");
@@ -13,6 +21,10 @@ class B  implements A{
 
     public void config() {
         System.out.println("in config");
+    }
+
+    public void run() {
+        System.out.println("Running...");
     }
 
 }
@@ -26,5 +38,13 @@ public class Main {
         obj.show();
 
         System.out.println(A.age);
+
+        X obj1 = new B();
+        obj1.run();
     }
 }
+
+
+//class - class --> extends
+//calss - interface ==> implements
+//interface - interface --> extends
