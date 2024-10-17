@@ -13,9 +13,15 @@ public class DemoJdbc {
         // process the results
         // close
 
-        Class.forName("org.postgresql.Driver");
+        String url = "jdbc:postgresql://localhost:5432/Demo";
+        String uname = "postgres";
+        String pass = "2448";
 
-        Connection con = DriverManager.getConnection("","","");
+        Class.forName("org.postgresql.Driver");  //not compulsory
+
+        Connection con = DriverManager.getConnection(url,uname,pass);
+
+        System.out.println("Connection established");
 
 
     }
