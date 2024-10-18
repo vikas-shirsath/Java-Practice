@@ -21,6 +21,9 @@ public class DemoJdbc {
 
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery(sql); //for fetching data
+
+
+
         System.out.println("Connection established");
 
 
