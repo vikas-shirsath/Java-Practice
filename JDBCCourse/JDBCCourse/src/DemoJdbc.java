@@ -22,7 +22,12 @@ public class DemoJdbc {
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery(sql); //for fetching data
         System.out.println("Connection established");
+        System.out.println(rs.next());
+        con.close();
+        System.out.println("Connection Closed");
+        rs.next();
 
-
+        String name = rs.getString("sname");
+        System.out.println("Name of a student is "+name);
     }
 }
