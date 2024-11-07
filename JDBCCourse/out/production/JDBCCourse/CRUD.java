@@ -15,25 +15,12 @@ public class DemoJdbc {
         String pass = "2448";
         String sql = "select * from student";
 
-        Class.forName("org.postgresql.Driver");  //not compulsory
-
         Connection con = DriverManager.getConnection(url,uname,pass);
-
-        Statement st = con.createStatement();
-        ResultSet rs = st.executeQuery(sql); //for fetching data
         System.out.println("Connection established");
-//        System.out.println(rs.next());
-//        rs.next();
-//
-//        String name = rs.getString("sname");
-//        System.out.println("Name of a student is "+name);
+        Statement st = con.createStatement();
 
-        while(rs.next()) {
-            System.out.print(rs.getInt(1) + "-");
-            System.out.print(rs.getString(2) + "-");
-            System.out.println(rs.getInt(3));
-        }
 
+        
         con.close();
         System.out.println("Connection Closed");
     }
