@@ -18,10 +18,11 @@ public class DemoJdbc {
         Class.forName("org.postgresql.Driver");  //not compulsory
 
         Connection con = DriverManager.getConnection(url,uname,pass);
-
-        Statement st = con.createStatement();
-        ResultSet rs = st.executeQuery(sql); //for fetching data
         System.out.println("Connection established");
+        Statement st = con.createStatement();
+
+
+        ResultSet rs = st.executeQuery(sql); //for fetching data
 //        System.out.println(rs.next());
 //        rs.next();
 //
